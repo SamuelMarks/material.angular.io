@@ -397,11 +397,9 @@ const DOCS: {[key: string]: DocCategory[]} = {
             'table-row-context',
             'table-selection',
             'table-sorting',
-
-            // Expose these examples with 6.3.0 release (sticky table)
-            // 'table-sticky-column',
-            // 'table-sticky-footer',
-            // 'table-sticky-header',
+            'table-sticky-columns',
+            'table-sticky-footer',
+            'table-sticky-header',
         ]},
       ]
     }
@@ -425,6 +423,21 @@ const DOCS: {[key: string]: DocCategory[]} = {
           examples: []
         },
         {
+          id: 'drag-drop',
+          name: 'Drag and Drop',
+          summary: 'Directives enabling drag-and-drop interactions',
+          examples: [
+            'cdk-drag-drop-axis-lock',
+            'cdk-drag-drop-sorting',
+            'cdk-drag-drop-overview',
+            'cdk-drag-drop-horizontal-sorting',
+            'cdk-drag-drop-custom-preview',
+            'cdk-drag-drop-root-element',
+            'cdk-drag-drop-handle',
+            'cdk-drag-drop-connected-sorting',
+          ],
+        },
+        {
           id: 'layout',
           name: 'Layout',
           summary: 'Utilities to respond to changes in viewport size.',
@@ -446,7 +459,9 @@ const DOCS: {[key: string]: DocCategory[]} = {
           id: 'platform',
           name: 'Platform',
           summary: 'Provides information about the user\'s platform.',
-          examples: []
+          examples: [
+            'cdk-platform-overview',
+          ]
         },
         {
           id: 'portal',
